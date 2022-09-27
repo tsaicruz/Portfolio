@@ -6,67 +6,84 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio Mariano Tsai</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/style.css" />
+
 </head>
 
 <body>
-    <a href="../index.html"><h1>Mariano Tsai</h1></a>
-    <header>
-        <div class="fotos">
-            <div >
-                <img src="../img/cara.jpg" alt="cara de modelo" class="foto1">
-                <p>Proyecto retrato</p>
-            </div>
-            <div>
-                <img src="../img/ojolateral.jpg" alt="ojo de lateral" class="foto2">
-                <p>Proyecto de ojos primer plano</p>
-            </div>
-            <div>
-                <img src="../img/grito.jpg" alt="señor gritando" class="foto3" >
-                <p>Proyecto expresiones</p>
-            </div>
-            <div>
-                <img src="../img/flores.webp" alt="flores blanco y negro" class="foto4">
-                <p>Proyecto naturaleza black and white</p>  
-            </div>
-            <div>
-                <img src="../img/manos.jpg" alt="manos en blanco y negro" class="foto5">
-                <p>Proyecto expresiones con manos</p>        
-            </div>            
-        </div>
-        <nav class="navproyectos">
-            <ul>
-                <li>
-                    <a href="../index.html">HOME</a>
-                </li>
+    <div class="grids">
+        <a href="../index.html">
+            <h1 class="titleProyectos">Mariano Tsai</h1>
+        </a>
+        <header>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 col-md-6 col-sm-12 ps-5 mt-5 mb-5">
+                        <nav>
+                            <ul class="list-unstyled" >
+                                <li>
+                                    <a href="../index.html" class="proyectosnav">HOME</a>
+                                </li>
 
-                <li>
-                    <a href="sobreMi.html">SOBRE MI</a>
-                </li>
+                                <li>
+                                    <a href="sobreMi.html"  class="proyectosnav">SOBRE MI</a>
+                                </li>
 
-                <li>
-                    <a href="proyectos.html">PROYECTOS</a>
-                </li>
+                                <li>
+                                    <a href="proyectos.html"  class="proyectosnav" >PROYECTOS</a>
+                                </li>
 
-                <li>
-                    <a href="skills.html">SKILLS</a>
-                </li>
+                                <li>
+                                    <a href="skills.html"  class="proyectosnav" >SKILLS</a>
+                                </li>
 
-                <li>
-                    <a href="contacto.html">CONTACTO </a>
-                </li>
-            </ul>
-        </nav>
+                                <li>
+                                    <a href="contacto.html" class="proyectosnav" >CONTACTO </a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="col-lg-6  col-md-6  col-sm-12" >
+                        <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img src="../img/cara.jpg" class="d-block w-100" alt="...">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="../img/fotogato.jpg" class="d-block w-100" alt="...">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="../img/manos.jpg" class="d-block w-100" alt="...">
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <img src="../img/ojolateral.jpg" class="d-block w-100" alt="...">
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="../img/ojos.jpg" class="d-block w-100" alt="...">
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </div>
+    </div>
     </header>
-    <main>
-    </main>
-    <footer>
+    </div>  
+    <footer >
         <div class="redes">
-            <p>Sitio creado por Mariano Tsai - Todos los derechos reservados</p>
             <a href="https://www.linkedin.com/in/marianotsai/"><img src="../img/linkedin.svg" alt="linkedin" /></a>
             <a href="https://github.com/tsaicruz"><img src="../img/github.svg" alt="github" /></a>
+            <p class="footerSite">Sitio creado por Mariano Tsai - Todos los derechos reservados</p>
         </div>
     </footer>
+
+    <!--Scripts de bootstrap>-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>
