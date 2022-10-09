@@ -1,13 +1,153 @@
 * {
-    margin: 0;
-    padding: 0;
-  }
+  margin: 0;
+  padding: 0;
+}
 
-  body {
-    background-color: black;
-    font-family: 'Montserrat', sans-serif;
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
+@mixin size($width , $height) {
+  height: $height;
+  width: $width;
+  
+}
+
+body {
+  background-color: rgb(0, 0, 0);
+  font-family: "Montserrat", sans-serif;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+header {
+  grid-area: header;
+}
+
+nav {
+  grid-area: nav;
+}
+
+footer {
+  grid-area: footer;
+}
+
+.grids {
+  grid-template-areas:
+    "header"
+    "nav"
+    "footer";
+}
+
+footer {
+  padding: 0%;
+  margin: 0%;
+  min-height: 0px;
+}
+
+.logos {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  @include size(400px, 500px);
+  margin: 100px;
+  padding: 100px;
+  gap: 70px;
+}
+
+nav ul li a {
+  list-style-type: none;
+  color: bisque;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+}
+
+@media (min-width: 900px) {
+  h1 {
+    color: rgb(255, 234, 5);
+    text-align: center;
+    padding: 40px;
+    margin: 5px 10px 12px 15px;
+    border: 10px double white;
+    font-size: 60px;
     
   }
+
+  header {
+    color: goldenrod;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row-reverse;
+    align-items: center;
+  }
+  li {
+    list-style-type: none;
+    margin: 50px;
+  }
+  a {
+    text-decoration: none;
+    color: rgb(255, 12, 12);
+  }
+
+  footer {
+    color: rgb(222, 222, 120);
+    background-color: rgba(128, 128, 128, 0.313);
+    padding: 10px;
+    margin-bottom: 0;
+  }
+  p {
+    color: white;
+  }
+  .row {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 60px;
+  }
+  .col {
+    padding: 10px;
+  }
+  .redes {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+  .logos {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    @include size (400px, 500px);
+    margin: 100px;
+    padding: 100px;
+    gap: 70px;
+  }
+
+  nav {
+    font-size: 30px;
+  }
+
+  
+  .nav1:hover{
+    border: 1px solid white;
+    background-color: rgba(128, 128, 128, 0.4);
+  }
+
+ .sobreMi{
+  @extend .nav1
+ }
+
+ .proyectos{
+  @extend .nav1
+ }
+
+.skills{
+  @extend .nav1
+}
+.contacto {
+  @extend .nav1
+}
+}

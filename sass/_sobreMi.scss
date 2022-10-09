@@ -1,0 +1,29 @@
+/* Propiedades para section sobremi */
+.imagenSobreMi {
+    width: 70%;
+    height: 70%;
+    display: grid;
+    justify-content: center;
+  }
+  
+  .parrafoSobreMi {
+    color: beige;
+    padding-top: 2em;
+    padding-bottom: 2em;
+    margin: 15px;
+  }
+  
+  @media (min-width: 500px) 
+  {
+        .imagenSobreMi {
+      width: 70%;
+      height: 70%;
+    }
+  }
+
+  @media (min-width: 900px){
+    .imagenSobreMi {
+      width: 40%;
+      height: 40%;
+    }
+  }

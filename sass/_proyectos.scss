@@ -1,0 +1,45 @@
+/* propiedaes para la section de proyectos*/
+.foto1, .foto2, .foto3, .foto4, .foto5 {
+    height: 100%;
+    width: 100%;
+  }
+  
+  .fotos {
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    gap: 2em;
+    margin-top: 50px;
+  }
+  
+  p {
+    color: beige;
+    gap: 2em;
+    text-align: center;}
+  
+  nav {
+    margin-top: 30px;
+    padding-top: 10px;
+  }
+
+  @media (min-width: 500px) {
+    // agregar contenido para que cambie un poco 
+  }
+  
+
+  @media (min-width: 900px) {
+    .fotos {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-around;
+    }
+
+    .titleProyectos {
+      font-size: 100px;
+    }
+    
+    .proyectosnav {
+      font-size: 40px;
+    }
+  }
