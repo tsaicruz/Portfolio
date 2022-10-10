@@ -55,16 +55,6 @@ footer {
   .footerSite {
     font-size: 1.5em;
   }
-  #sub {
-    min-width: 50%;
-    margin-left: 75%;
-    margin-right: 136%;
-  }
-  #res {
-    min-width: 50%;
-    margin-right: 10%;
-    margin-top: 1%;
-  }
 } /*# sourceMappingURL=style.css.map */
 /* Propiedades para section sobremi */
 .imagenSobreMi {
@@ -98,6 +88,11 @@ form {
   padding: 2%;
 }
 
+fieldset {
+  color: white;
+  padding: 50px;
+}
+
 .formularioBttn {
   width: 15em;
   display: flex;
@@ -113,11 +108,13 @@ form {
   min-height: 172px;
 }
 
-@media (min-width: 900px) {
-  fieldset {
-    color: white;
-    padding: 50px;
+@media (min-width: 500px) {
+  #text {
+    min-width: 22%;
+    max-width: 22%;
   }
+}
+@media (min-width: 900px) {
   .formulario {
     display: flex;
     flex-direction: column;
@@ -131,8 +128,27 @@ form {
     justify-content: space-around;
     padding: 50px;
   }
+  #text {
+    min-width: 66%;
+    max-width: 40%;
+    min-height: 172px;
+  }
   form {
     padding: 100px;
+  }
+  .bodyfondo {
+    background-image: url("../img/background-contacto.jfif");
+    background-position: left;
+    background-size: 75%;
+  }
+  #sub {
+    min-width: 50%;
+    margin-left: 5%;
+    margin-right: 10%;
+  }
+  #res {
+    min-width: 50%;
+    margin-right: 10%;
   }
 }
 /* propiedades para la section de skills */
