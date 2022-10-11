@@ -83,13 +83,14 @@ nav ul li a {
     flex-direction: row-reverse;
     align-items: center;
   }
+  
   li {
     list-style-type: none;
     margin: 50px;
-  }
-  a {
-    text-decoration: none;
-    color: rgb(255, 12, 12);
+    a {
+      text-decoration: none;
+    }
+  
   }
 
   footer {

@@ -66,8 +66,8 @@ form {
 
     .bodyfondo{
       background-image: url("../img/background-contacto.jfif");
-      background-position: left;
-      background-size:75%;
+      background-position: cover;
+      background-size:cover;
     }
       #sub {
         min-width: 50%;
@@ -76,8 +76,14 @@ form {
       }
       #res {
         min-width: 50%;
-        margin-right: 10%;
-        
+        margin-right: 10%;     
+    }
+
+    .mapa {
+      border: solid black 1px;
+      margin-left: 100px;
+
+
       
     }
   }
