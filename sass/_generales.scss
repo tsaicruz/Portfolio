@@ -46,15 +46,7 @@ footer {
   padding: 0%;
   margin: 0%;
   min-height: 0px;
-}
-
-.logos {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  @include size(400px, 500px);
-  margin: 100px;
-  padding: 100px;
-  gap: 70px;
+  // contain: 100%;
 }
 
 nav ul li a {
@@ -118,14 +110,7 @@ nav ul li a {
     justify-content: center;
     align-items: center;
   }
-  .logos {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    @include size (400px, 500px);
-    margin: 100px;
-    padding: 100px;
-    gap: 70px;
-  }
+
 
   nav {
     font-size: 30px;

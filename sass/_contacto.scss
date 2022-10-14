@@ -1,89 +1,69 @@
 /*propiedades para la section de contacto */
 
-form {
-    padding: 2%;
-  }
+.container2{
+  color: rgb(255, 255, 255);
+  font-size: 20px;
+  font-weight: bolder;
+}
 
-  fieldset {
-    color: white;
-    padding: 50px;
-  }
-  
-  
-  .formularioBttn {
-    width: 15em;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-around;
-    padding: 5em;
-  }
-  
-  #text {
-    min-width: 40%;
-    max-width: 40%;
-    min-height: 172px;
-  }
+.navContacto{
+  color: white;
+  font-size: 30px;
+  font-weight: lighter;
+}
+
+
+h2{
+  font-weight: bolder;
+  font-size: 30px;
+}
+.btn {
+  width: 100px;
+  margin-top: 10px;
+}
+
+.buttons{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.mapa{
+  padding-bottom: 3em;
+  padding-top: 3em;
+}
+
 
   @media (min-width: 500px) {
-    // agregar contenido para que cambie un poco 
-    #text {
-      min-width: 22%;
-      max-width: 22%;
+
+    
+    .mapa {
+      height: 500px;
+      height: 500px;
     }
   }
   
 
   @media (min-width: 900px) {
+
+    .container2{
+      color: rgb(255, 255, 255);
+      font-size: 20px;
+      font-weight: bolder;
+      display: flex;
+      justify-content: center;
     
-  
-
-    .formulario {
-      display: flex;
-      flex-direction: column;
-      align-items: stretch;
-      
     }
-    .formularioBttn {
-      width: 150px;
-      display: flex;
-      flex-direction: row;
-      align-items: center;
-      justify-content: space-around;
-      padding: 50px;
-    }
-
-    #text {
-      min-width: 66%;
-      max-width: 40%;
-      min-height: 172px;
-    }
-  
-
-    form {
-      padding: 100px;
-    }
-
+    
     .bodyfondo{
       background-image: url("../img/background-contacto.jfif");
-      background-position: cover;
-      background-size:cover;
-    }
-      #sub {
-        min-width: 50%;
-        margin-left: 5%;
-        margin-right: 10%;
-      }
-      #res {
-        min-width: 50%;
-        margin-right: 10%;     
-    }
+      background-size: cover;
+      background-repeat: no-repeat;
+    }  
 
-    .mapa {
-      border: solid black 1px;
-      margin-left: 100px;
+    form {
+      padding: 100px;   
+    } 
 
-
-      
-    }
+    
   }
