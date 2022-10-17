@@ -33,6 +33,10 @@ h2{
   padding-top: 3em;
 }
 
+textarea {
+  height: 228px;
+}
+
 
   @media (min-width: 500px) {
 
@@ -64,6 +68,8 @@ h2{
     form {
       padding: 100px;   
     } 
+
+    
 
     
   }
