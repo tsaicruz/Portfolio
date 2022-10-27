@@ -342,7 +342,12 @@ nav ul li a {
   align-items: center;
 }
 
-.img4, .img3, .img5, .img1, .img2, .img6 {
+.img4,
+.img3,
+.img5,
+.img1,
+.img2,
+.img6 {
   height: 200px;
   width: 300px;
 }
@@ -399,27 +404,19 @@ p img {
   width: 30em;
 }
 
-@media (min-width: 500px) {
-  .img4, .img3, .img5, .img1, .img2, .img6 {
-    height: 200px;
-    width: 300px;
-  }
-}
 @media (min-width: 768px) {
-  .img4, .img3, .img5, .img1, .img2, .img6 {
+  .img1, .img2, .img3, .img4, .img5, .img6 {
     height: 300px;
     width: 600px;
   }
+  .cuadro {
+    border: 2px solid goldenrod;
+  }
 }
 @media (min-width: 900px) {
-  .headerProyectos {
-    display: flex;
-    justify-content: space-around;
-    flex-direction: row;
-    align-items: center;
-  }
-  .img4 {
-    height: 324px;
+  .img1, .img2, .img3, .img4, .img5, .img6 {
+    height: 200px;
+    width: 200px;
   }
   .cuadro {
     background-color: rgba(128, 128, 128, 0.457);
@@ -430,8 +427,8 @@ p img {
     display: flex;
     flex-direction: row;
     align-items: center;
-    max-width: 670px;
-    max-height: 335px;
+    max-width: 600px;
+    max-height: 209px;
   }
   .cuadro img {
     border: 2px double black;
@@ -450,8 +447,8 @@ p img {
     display: flex;
     flex-direction: row-reverse;
     align-items: center;
-    max-width: 670px;
-    max-height: 335px;
+    max-width: 600px;
+    max-height: 209px;
   }
   .cuadro2 .cards2 p {
     color: black;
