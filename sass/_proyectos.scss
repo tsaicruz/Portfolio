@@ -4,7 +4,6 @@
   width: $width;
 }
 
-
 .headerProyectos {
   display: flex;
   justify-content: space-around;
@@ -12,10 +11,9 @@
   align-items: center;
 }
 
-// .img4{
-//   @include size(600px,400px)
-// }
-
+.img4, .img3, .img5, .img1, .img2, .img6{
+  @include size(300px,200px)
+}
 
 //cuadro numero 1
 .cuadro {
@@ -31,7 +29,7 @@
 }
 p {
   color: black;
-  font-size: 1.5em;
+  font-size: 1em;
   font-weight: bolder;
   text-align: center;
   padding: 1em;
@@ -57,7 +55,7 @@ p {
 
 p {
   color: black;
-  font-size: 1.5em;
+  font-size: 1em;
   font-weight: bolder;
   text-align: center;
   padding: 1em;
@@ -71,10 +69,11 @@ p {
 
 
 @media (min-width: 500px) {
-  .img1 {
-    image-resolution: 300px;
+  
+  .img4, .img3, .img5, .img1, .img2, .img6{
+    @include size(300px,200px)
   }
-
+  
 
 
 
@@ -82,6 +81,12 @@ p {
 
 
 @media (min-width: 768px){
+
+  .img4, .img3, .img5, .img1, .img2, .img6{
+    @include size(600px,300px)
+  }
+  
+
 
 }
 
@@ -118,6 +123,9 @@ p {
       border: 2px double black;
       width: 30em;
     }
+  }
+  p{
+    font-size: 1.5em;
   }
   
   

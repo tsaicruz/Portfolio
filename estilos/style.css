@@ -342,6 +342,11 @@ nav ul li a {
   align-items: center;
 }
 
+.img4, .img3, .img5, .img1, .img2, .img6 {
+  height: 200px;
+  width: 300px;
+}
+
 .cuadro {
   background-color: rgba(128, 128, 128, 0.457);
   border: 2px solid white;
@@ -357,7 +362,7 @@ nav ul li a {
 
 p {
   color: black;
-  font-size: 1.5em;
+  font-size: 1em;
   font-weight: bolder;
   text-align: center;
   padding: 1em;
@@ -383,7 +388,7 @@ p img {
 
 p {
   color: black;
-  font-size: 1.5em;
+  font-size: 1em;
   font-weight: bolder;
   text-align: center;
   padding: 1em;
@@ -395,8 +400,15 @@ p img {
 }
 
 @media (min-width: 500px) {
-  .img1 {
-    image-resolution: 300px;
+  .img4, .img3, .img5, .img1, .img2, .img6 {
+    height: 200px;
+    width: 300px;
+  }
+}
+@media (min-width: 768px) {
+  .img4, .img3, .img5, .img1, .img2, .img6 {
+    height: 300px;
+    width: 600px;
   }
 }
 @media (min-width: 900px) {
@@ -424,6 +436,9 @@ p img {
   .cuadro img {
     border: 2px double black;
     width: 30em;
+  }
+  p {
+    font-size: 1.5em;
   }
   .cuadro2 {
     background-color: rgba(128, 128, 128, 0.457);
