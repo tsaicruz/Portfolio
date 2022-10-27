@@ -1,54 +1,61 @@
 /* propiedades para la section de skills */
 
-@mixin size($width , $height) {
-  height: $height;
-  width: $width;
+.logos {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
 }
 
-.logoHtml, .logoCss, .logoJava, .logoMysql {
-    width: 75%;
-    height: 75%;
-  }
-  
-  .logos {
-    display: grid;
-    flex-direction: column;
-    justify-content: center;
-  }
+.container {
+  font-weight: bolder;
+}
 
-  
+.bar {
+  margin-bottom: 3em;
+  padding: 3em;
+}
+
+.progress {
+  margin-bottom: 3em;
+}
+
+.container3 {
+  justify-content: center;
+}
+
 @media (min-width: 500px) {
-
-}
-
-
-@media (min-width: 900px) {
-
   .logos {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    @include size (400px, 500px);
-    margin: 100px;
-    padding: 100px;
-    gap: 70px;
+    justify-items: center;
+    gap: 3em;
   }
-  
+}
 
+@media (min-width: 768px) {
+  .logos {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    justify-items: center;
+    gap: 3em;
+  }
+}
 
-  .logoHtml, .logoCss, .logoJava, .logoMysql {
-    width: 200px;
-    height: 200px;
+@media (min-width: 900px) {
+  .logos {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-bottom: 3em;
+  }
+
+  .box {
+    transition: all 1s;
   }
 
   .box:hover {
-    transform: scale(2);
-  }
-
-.logoHtml,
-.logoCss,
-.logoJava,
-.logoMysql {
-    transition-property: all;
-    transition-duration: 3s;
+    transform: rotate(360deg) scale(2);
   }
 }

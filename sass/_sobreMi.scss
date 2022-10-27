@@ -21,6 +21,14 @@
     }
   }
 
+  @media (min-width: 768px) {
+    h1{
+      color:rgb(0, 255, 229);
+    }
+
+  }
+
+  
   @media (min-width: 900px){
     .imagenSobreMi {
       width: 40%;

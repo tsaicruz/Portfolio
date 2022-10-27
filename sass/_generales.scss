@@ -9,6 +9,10 @@
   
 }
 
+h1{
+  text-decoration: none;
+}
+
 body {
   background-color: rgb(0, 0, 0);
   font-family: "Montserrat", sans-serif;
@@ -46,7 +50,8 @@ footer {
   padding: 0%;
   margin: 0%;
   min-height: 0px;
-  // contain: 100%;
+  background-color: rgb(39, 39, 39);
+  margin-top: 3em;
 }
 
 nav ul li a {
@@ -56,6 +61,24 @@ nav ul li a {
   display: flex;
   justify-content: center;
 }
+
+.redes {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (min-width: 500px){
+
+}
+
+
+@media (min-width: 768px){
+
+
+}
+
 
 @media (min-width: 900px) {
   h1 {
@@ -86,8 +109,8 @@ nav ul li a {
   }
 
   footer {
-    color: rgb(222, 222, 120);
-    background-color: rgba(128, 128, 128, 0.313);
+    color: rgb(0, 0, 0);
+    background-color: rgba(76, 76, 76, 0.924);
     padding: 10px;
     margin-bottom: 0;
   }
@@ -115,8 +138,6 @@ nav ul li a {
   nav {
     font-size: 30px;
   }
-  
-
   
   .nav1:hover{
     border: 1px solid white;

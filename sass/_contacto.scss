@@ -1,5 +1,8 @@
 /*propiedades para la section de contacto */
 
+.h1{
+  font-weight: bolder;
+}
 .container2{
   color: rgb(255, 255, 255);
   font-size: 20px;
@@ -33,10 +36,10 @@ h2{
   padding-top: 3em;
 }
 
-textarea {
-  height: 228px;
+#exampleFormControlTextarea1 {
+  min-height: 228px;
+  max-height: 228px;
 }
-
 
   @media (min-width: 500px) {
 
@@ -49,6 +52,12 @@ textarea {
   
 
   @media (min-width: 900px) {
+
+
+    .nav-contacto {
+      padding-top: 30px;
+      margin-top: 30px;
+    }
 
     .container2{
       color: rgb(255, 255, 255);

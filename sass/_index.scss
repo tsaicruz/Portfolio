@@ -9,10 +9,14 @@ h1 {
   display: flex;
   justify-content: center;
   border: 1px double white;
-  color: rgb(82, 192, 255);
-  
+  color: rgb(215, 255, 82);
 }
   
+.pIndex{
+  color: beige;
+  padding-top: 3em;
+  padding-bottom: 3em;
+}
 
 footer {
   color: bisque;
@@ -28,6 +32,7 @@ footer {
   display: grid;
   justify-content: center;
 }
+
 
 @media (min-width: 500px) {
 h1 {
@@ -48,13 +53,11 @@ a {
 }
 
 @media (min-width: 768px) {
-  body {
-    background-color: black;
-    font-family: "Montserrat", sans-serif;
-    display: flex;
-    flex-direction: column;
-  }
-  
+
+h1{
+  background-color: rgb(64, 64, 64);
+}
+
 }
 
 @media (min-width: 900px) {
